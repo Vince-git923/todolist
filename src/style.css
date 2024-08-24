@@ -1,0 +1,401 @@
+
+
+body{
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    
+    
+    
+}.menu,.close{
+    height: 40px;
+    width: 40px;
+}.close{
+    position: absolute;
+    transform: translateX(-40px);
+}
+.newTodoBtn{
+    width: 50px;
+    height: 50px;
+}.projectBtn{
+    height: 30px;
+    width: 30px;
+}
+
+.nav-top{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    height: 10%;
+
+}.visbleWrapper{
+    height: 100vh;
+}
+.bottom-cont{
+    display: flex;
+    height: 90%;
+    
+    
+}.controlPro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+
+}.taskDelete,.taskEdit{
+    height: 30px;
+    width: 30px;
+    
+}
+.content{
+    font-size: 20px;
+    width: 100%;
+    background-color: #19192beb;
+   overflow-y:auto;
+   font-size: 18px;
+  
+   
+    
+    
+}/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0b7f75;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #810c31;
+  }
+
+.left-nav{
+ 
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 40%;
+    
+    
+}
+
+.addPrompt{
+    top:20%;
+    display:flex;
+    background-color: rgb(142, 57, 57);
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    width:60%;
+    height: 40%;
+    border-radius: 20px;
+    
+}
+
+.vwrapper{
+    width: 100%;
+     
+    height: 100vh;
+    max-width: 1000px;
+}.projectStyle{
+    margin-bottom: 5px;
+    display: flex;
+    align-items:center;
+    cursor:pointer;
+    justify-content: space-between;
+    border: none;
+    height: 40px;
+    background-color:#535C91;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.projectList{
+   
+    height: 100%;
+}
+.forstyle{
+    display: flex;
+    justify-content: space-between;
+}
+/* Add Project Pop UP styling */
+.addProjectPopUp{
+    position: absolute;
+    gap: 10px;
+    background-color: rgb(53, 50, 84);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+}#projectName{
+    height: 20px;
+    outline: none;
+}
+.popUpForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.addToProject,.confirm,.addToTask,.newAddBtn{
+    border: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    background-color: rgb(43, 144, 198);
+}.cancel{
+    font-weight: 600;
+    border: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    background-color: #7f0b0b;
+}
+/* Add Project Pop UP styling */
+
+.addTaskPopUp{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    visibility: hidden;
+    z-index: 2;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+   
+    border:2px solid white;
+    background-color: #535C91;
+}
+.taskForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}.selectFolder{
+    padding-bottom: 10px;
+}
+.active{
+    color:red;
+}.task-wrapper{
+   padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.clickDiv{
+    overflow: auto;
+
+}
+
+.initial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor:pointer;
+    justify-content: space-between;
+   
+    
+}.initial,h3{
+ width: 100%;
+}.task-control{
+    display: flex;
+    gap: 20px;
+    
+}
+.expand{
+    max-height: 0;
+  
+    overflow: hidden; 
+    
+    
+}.prioColor{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+.activeBtn{
+   background-color: orangered;
+   font-weight: 900;
+   color: white;
+   
+}
+.hiddenCont{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    visibility: hidden;
+    padding: 20px;
+    gap:40px;
+    max-width: 40%;
+    border-radius: 5px;
+    background-color: rgb(60, 72, 106);
+    display: flex;
+    font-size: 20px;
+    border:2px solid white;
+    flex-direction: column;
+}.forAppend{
+    display: flex;
+    gap:10px;
+}
+.disable{
+    
+    z-index: 1;
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+}
+.noContent{
+   width: 50%;
+   height: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url('../images/no-task.png');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   opacity: 0.2;
+}.del{
+    height: 20px;
+    width: 20px;
+}.tasks{
+        
+    justify-content: center;
+    
+}.forstyle{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.burger{
+    display: none;
+}
+
+
+
+@media(hover:hover){
+    .newTodoBtn:hover{
+        transition: 0.3s;
+        scale: 120%;
+    }
+    .projectStyle:hover{
+        background-color: #9290C3 ;
+    }.activeBtn:hover{
+        background-color: orangered;
+    }.task-wrapper:hover{
+        background-color: rgb(37, 37, 83);
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .vwrapper{
+        height: 100vh;
+    }
+    .left-nav{
+       height: 90%;
+        position:absolute;
+        z-index: 1;
+        visibility: hidden;
+        flex-direction: column;
+        transition: 0.3s;
+        opacity: 0;
+        transform: translateX(-100%) ;
+        
+       
+       
+    }.burger{
+        display: inline;
+    }.show{
+        
+        opacity: 1;
+        background-color: rgb(45, 45, 45);
+        
+        visibility: visible;
+        
+        transform: translateX(0%);
+        
+        transition: ease-in-out,0.4s;
+        
+        width: 60%;
+        
+        
+        
+    }.logo{
+        overflow: hidden;
+        font-size: 30px;
+        font-weight: 600;
+    }.nav-top{
+        gap:10%;
+        align-items: center;
+       
+    }.taskEdit,.taskDelete{
+        height: 25px;
+        width: 25px;
+    }.projectStyle{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        align-items:center;
+        
+        justify-content: space-between;
+    }.newTodoBtn{
+        height: 40px;
+        width: 40px;
+    }.tasks{
+       
+        justify-content: center;
+    }.projectList{
+        overflow: auto;
+    }.addTaskPopUp{
+        font-size: 18px;
+    }
+  }
+
+  

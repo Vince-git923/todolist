@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<body>
+
+
+    <div class="addProjectPopUp" id="form1">
+        <form class="popUpForm">
+            <label for="projectName">Project Name:</label>
+            <input type="text" onfocus="this.value = ''" id = "projectName" maxlength="20">
+           
+             
+            <div>
+                <input type="submit" 
+             value="Ok" class="addToProject">
+             <button id = 'cancelPro' class="cancel">Cancel</button>
+            </div>
+        </form>
+        <div class="error"></div>
+        </div>
+        
+        <!-- --------------------------------- -->
+        <div class="addTaskPopUp" id="form2">
+            <form class="taskForm">
+                <label for="taskName">Task Name:</label>
+                <input type="text"  id = "taskName" maxlength="30" required>
+                <label for="taskDescription">Description:</label>
+                <input type="text" id = "taskDescription" maxlength="200">
+                <label for="taskDue">Due Date:</label>
+                <input type="date" id = "taskDue">
+
+                <div class="prio">
+                <div>Priority:</div>
+                <input type="radio" id = "low" name= "taskPrio" class="taskPrio" value="Low">Low
+                <input type="radio"  class="taskPrio" id = "med" name= "taskPrio"
+                value="Medium">Medium
+                <input type="radio" class="taskPrio" id = "hi" name= "taskPrio"
+                value="High">High
+                </div>
+                <div class="selectFolder">
+                    <label for="saveTo">Save To:</label>
+                    <select name="saveTo" id="saveTo" required>
+                    <option value="Tasks">Tasks</option>
+                        
+                    </select>
+                </div>
+                <div class="popUpControl">
+                    <input type="submit" 
+                 value="Ok" class="addToTask">
+                
+                 <button class="cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+<!-- ------------------------------------------ -->
+    
+    <div class="vwrapper">
+        <div class="nav-top">
+            <div class="burger">
+                <img src="../images/menu.png" alt="" class="menu">
+                <img src="../images/close.png" alt="" class="close">
+            </div>
+            <div class="logo"><div class="tempText">DONOT</div></div>
+            <img src="../images/add.png" alt="" class="newTodoBtn">
+           
+
+            
+        </div>
+        <div class="bottom-cont">
+            <div class="left-nav">
+                
+                <div class="tasks projectStyle">Tasks</div>
+                <div class="forstyle">
+                    
+                    <div>Projects</div>
+                    <div class="controlPro">
+                        <img src="../images/add-file.png" class="projectBtn" alt="">
+                        
+                    </div>
+                    
+                </div>
+               
+                
+                
+                <div class="projectList">
+                    
+    
+                </div>
+            </div>
+            
+            
+               
+                <div class="content">
+                
+                
+    
+                </div>
+           
+        </div>
+    </div>
+    <div class="hiddenCont">
+       
+           <div class="flx">
+            <button class="confirm">Delete</button>
+            <button class="cancel">Cancel</button>
+           </div>
+        </div>
+        
+    </div>
+
+
+    <div class="disable">
+       
+    </div>
+ 
+        
+</body>
+</html>
