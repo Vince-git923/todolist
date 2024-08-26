@@ -2,6 +2,7 @@
 
 import './style.css';
 
+
 import DelIcon from '../images/trash.png'
 
 
@@ -291,9 +292,9 @@ function renderTask(){
                         initialView.classList.add('initial')
     
     
-                        let deleteBtn = document.createElement('img');
+                        let deleteBtn = document.createElement('div');
                         deleteBtn.classList.add('taskDelete')
-                        deleteBtn.setAttribute('src','../images/trash.png')
+                        
                         deleteBtn.classList.add('deleteBtn')
                         
     
@@ -322,9 +323,9 @@ function renderTask(){
                         desDiv.textContent = `Description: ${tsk.des}`
                         let prioDiv  = document.createElement('div')
                         prioDiv.textContent = `Priority: ${tsk.prio}`
-                        let edit = document.createElement('img')
+                        let edit = document.createElement('div')
                         edit.classList.add('taskEdit')
-                        edit.setAttribute('src','../images/edit.png')
+                        
                         edit.classList.add('editBtn')
 
                         expandDiv.appendChild(desDiv)
