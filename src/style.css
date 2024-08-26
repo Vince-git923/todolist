@@ -409,7 +409,11 @@ body{
     }.projectList{
         overflow: auto;
     }.addTaskPopUp{
-        font-size: 18px;
+        font-size: 15px;
+    }.flx{
+        display: flex;
+        gap:10px;
+
     }
   }
 
